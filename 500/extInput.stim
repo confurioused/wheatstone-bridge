@@ -1,0 +1,8 @@
+// Set PIN2 (INT0) high and low once
+
+$repeat 1
+    #4
+    PORTB.IN |= 0x04
+    #2
+    PORTB.IN = 0x00
+$endrep
